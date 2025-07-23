@@ -4,7 +4,5 @@ opencv-python
 torch
 torchvision
 torchaudio
-gTTS
-playsound
-pypiwin32
+pyttsx3
 numpy
