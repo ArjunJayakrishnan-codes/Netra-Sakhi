@@ -1,0 +1,10 @@
+flask
+ultralytics
+opencv-python
+torch
+torchvision
+torchaudio
+gTTS
+playsound
+pypiwin32
+numpy
