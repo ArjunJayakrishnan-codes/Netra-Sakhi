@@ -1,11 +1,13 @@
-import pyttsx3
-
-engine = pyttsx3.init()
+from gtts import gTTS
+import os
+from playsound import playsound
 
 def speak(text):
     print(f"[Assistant]: {text}")
     try:
-        engine.say(text)
-        engine.runAndWait()
+        tts = gTTS(text=text, lang='en')
+        tts.save("response.mp3")
+        playsound("response.mp3")
+        os.remove("response.mp3")
     except Exception as e:
-        print(f"Error with pyttsx3: {e}")
+        print(f"Error with gTTS: {e}")
