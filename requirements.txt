@@ -6,3 +6,4 @@ torchvision
 torchaudio
 pyttsx3
 numpy
+gTTS
